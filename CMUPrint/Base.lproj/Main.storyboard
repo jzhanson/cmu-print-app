@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CMUPrint" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,108 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shareable-brand" translatesAutoresizingMaskIntoConstraints="NO" id="6St-jt-Ydt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.096654570955176503" green="0.12029160233452975" blue="0.15881558939020635" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the ScottyLabs CMU Print API!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01S-wL-GAR">
+                                <rect key="frame" x="31.5" y="467.5" width="312" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQn-ce-QFV">
+                                <rect key="frame" x="146" y="543" width="83" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Let's go!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="u0G-Ij-yob" kind="presentation" modalTransitionStyle="crossDissolve" id="K48-2a-Cqv"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6St-jt-Ydt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="35b-Tn-pHn"/>
+                            <constraint firstItem="cQn-ce-QFV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3RF-Pf-QO0"/>
+                            <constraint firstItem="6St-jt-Ydt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="43d-GL-uYq"/>
+                            <constraint firstItem="6St-jt-Ydt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Hsw-J1-kKZ"/>
+                            <constraint firstItem="01S-wL-GAR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pre-fT-feW"/>
+                            <constraint firstAttribute="trailing" secondItem="6St-jt-Ydt" secondAttribute="trailing" id="YcX-vr-R9t"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cQn-ce-QFV" secondAttribute="bottom" constant="88" id="gR3-SI-iFI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="01S-wL-GAR" secondAttribute="bottom" constant="180" id="kFm-a7-OqI"/>
+                            <constraint firstItem="6St-jt-Ydt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ynq-n4-j8C"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6St-jt-Ydt" secondAttribute="bottom" id="zJ7-8N-Oa5"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="135" y="136.26760563380282"/>
+        </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="NR7-du-m34">
+            <objects>
+                <viewController id="u0G-Ij-yob" customClass="TutorialViewController" customModule="CMUPrint" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cek-2W-5ym"/>
+                        <viewControllerLayoutGuide type="bottom" id="56i-Pq-K5D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SEY-h8-v5H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shareable-brand" translatesAutoresizingMaskIntoConstraints="NO" id="TQd-zN-nUj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.096654570960000005" green="0.12029160229999999" blue="0.15881558940000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3B-Md-97f">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="action" id="rsO-v7-Bc5">
+                                        <connections>
+                                            <action selector="shareButtonWithSender:" destination="u0G-Ij-yob" id="g3l-Yc-3Kq"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIw-7b-hEn">
+                                <rect key="frame" x="16" y="407.5" width="343" height="95.5"/>
+                                <string key="text">Looks like you're all set up! Let's give it a try. Just tap the share button below, select CMUPrint—you might have to tap "More" and turn on the extention—and we're off to the races! </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="56i-Pq-K5D" firstAttribute="top" secondItem="TQd-zN-nUj" secondAttribute="bottom" id="02D-ee-gZW"/>
+                            <constraint firstAttribute="trailing" secondItem="p3B-Md-97f" secondAttribute="trailing" id="2eP-s6-S4f"/>
+                            <constraint firstItem="p3B-Md-97f" firstAttribute="top" secondItem="hIw-7b-hEn" secondAttribute="bottom" constant="120" id="3fJ-lr-MQa"/>
+                            <constraint firstItem="TQd-zN-nUj" firstAttribute="top" secondItem="SEY-h8-v5H" secondAttribute="top" id="DQ8-O8-WRA"/>
+                            <constraint firstItem="p3B-Md-97f" firstAttribute="centerX" secondItem="SEY-h8-v5H" secondAttribute="centerX" id="OTt-2g-dgP"/>
+                            <constraint firstItem="TQd-zN-nUj" firstAttribute="leading" secondItem="SEY-h8-v5H" secondAttribute="leading" id="XVp-j2-IjS"/>
+                            <constraint firstItem="TQd-zN-nUj" firstAttribute="centerX" secondItem="SEY-h8-v5H" secondAttribute="centerX" id="Z2g-bH-nWT"/>
+                            <constraint firstItem="56i-Pq-K5D" firstAttribute="top" secondItem="p3B-Md-97f" secondAttribute="bottom" id="ceg-aw-VHw"/>
+                            <constraint firstItem="hIw-7b-hEn" firstAttribute="trailing" secondItem="SEY-h8-v5H" secondAttribute="trailingMargin" id="eQY-iQ-7Oi"/>
+                            <constraint firstItem="TQd-zN-nUj" firstAttribute="centerY" secondItem="SEY-h8-v5H" secondAttribute="centerY" id="iwG-Km-5hP"/>
+                            <constraint firstItem="hIw-7b-hEn" firstAttribute="leading" secondItem="SEY-h8-v5H" secondAttribute="leadingMargin" id="izx-GJ-zGn"/>
+                            <constraint firstItem="p3B-Md-97f" firstAttribute="leading" secondItem="SEY-h8-v5H" secondAttribute="leading" id="oas-Z8-IdI"/>
+                            <constraint firstItem="hIw-7b-hEn" firstAttribute="centerX" secondItem="SEY-h8-v5H" secondAttribute="centerX" id="t6z-fk-hZt"/>
+                            <constraint firstAttribute="trailing" secondItem="TQd-zN-nUj" secondAttribute="trailing" id="tuB-qc-beo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0uc-DH-kXa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117.5999999999999" y="134.48275862068968"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="shareable-brand" width="1230" height="960"/>
+    </resources>
 </document>

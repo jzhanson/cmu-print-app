@@ -12,7 +12,37 @@
 		43430C301DBEB2EB00D62903 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43430C2E1DBEB2EB00D62903 /* Main.storyboard */; };
 		43430C321DBEB2EB00D62903 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43430C311DBEB2EB00D62903 /* Assets.xcassets */; };
 		43430C351DBEB2EB00D62903 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43430C331DBEB2EB00D62903 /* LaunchScreen.storyboard */; };
+		43A49E391DD3D48200F9FC1D /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A49E381DD3D48200F9FC1D /* ShareViewController.swift */; };
+		43A49E3C1DD3D48200F9FC1D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A49E3A1DD3D48200F9FC1D /* MainInterface.storyboard */; };
+		43A49E401DD3D48200F9FC1D /* CMU Print.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 43A49E361DD3D48200F9FC1D /* CMU Print.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		43BDFFB51DCAD763008E0056 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BDFFB41DCAD763008E0056 /* TutorialViewController.swift */; };
+		43FA5DD41DBEB58600AE9BB3 /* PrintShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 43FA5DCA1DBEB58600AE9BB3 /* PrintShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43A49E3E1DD3D48200F9FC1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43430C1F1DBEB2EB00D62903 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43A49E351DD3D48200F9FC1D;
+			remoteInfo = "CMU Print";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		43FA5DD81DBEB58600AE9BB3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				43FA5DD41DBEB58600AE9BB3 /* PrintShare.appex in Embed App Extensions */,
+				43A49E401DD3D48200F9FC1D /* CMU Print.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		43430C271DBEB2EB00D62903 /* CMUPrint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMUPrint.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +52,31 @@
 		43430C311DBEB2EB00D62903 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43430C341DBEB2EB00D62903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43430C361DBEB2EB00D62903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43430C3C1DBEB33100D62903 /* CMUPrint.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CMUPrint.entitlements; sourceTree = "<group>"; };
+		43A49E361DD3D48200F9FC1D /* CMU Print.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CMU Print.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43A49E381DD3D48200F9FC1D /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		43A49E3B1DD3D48200F9FC1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		43A49E3D1DD3D48200F9FC1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43BDFFB41DCAD763008E0056 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		43FA5DCA1DBEB58600AE9BB3 /* PrintShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PrintShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		43430C241DBEB2EB00D62903 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A49E331DD3D48200F9FC1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43FA5DC71DBEB58600AE9BB3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,7 +90,9 @@
 			isa = PBXGroup;
 			children = (
 				43430C291DBEB2EB00D62903 /* CMUPrint */,
+				43A49E371DD3D48200F9FC1D /* CMU Print */,
 				43430C281DBEB2EB00D62903 /* Products */,
+				435724DA1DBEBBF10034E7F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				43430C271DBEB2EB00D62903 /* CMUPrint.app */,
+				43FA5DCA1DBEB58600AE9BB3 /* PrintShare.appex */,
+				43A49E361DD3D48200F9FC1D /* CMU Print.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +109,33 @@
 		43430C291DBEB2EB00D62903 /* CMUPrint */ = {
 			isa = PBXGroup;
 			children = (
+				43430C3C1DBEB33100D62903 /* CMUPrint.entitlements */,
 				43430C2A1DBEB2EB00D62903 /* AppDelegate.swift */,
 				43430C2C1DBEB2EB00D62903 /* ViewController.swift */,
 				43430C2E1DBEB2EB00D62903 /* Main.storyboard */,
+				43BDFFB41DCAD763008E0056 /* TutorialViewController.swift */,
 				43430C311DBEB2EB00D62903 /* Assets.xcassets */,
 				43430C331DBEB2EB00D62903 /* LaunchScreen.storyboard */,
 				43430C361DBEB2EB00D62903 /* Info.plist */,
 			);
 			path = CMUPrint;
+			sourceTree = "<group>";
+		};
+		435724DA1DBEBBF10034E7F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43A49E371DD3D48200F9FC1D /* CMU Print */ = {
+			isa = PBXGroup;
+			children = (
+				43A49E381DD3D48200F9FC1D /* ShareViewController.swift */,
+				43A49E3A1DD3D48200F9FC1D /* MainInterface.storyboard */,
+				43A49E3D1DD3D48200F9FC1D /* Info.plist */,
+			);
+			path = "CMU Print";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +148,51 @@
 				43430C231DBEB2EB00D62903 /* Sources */,
 				43430C241DBEB2EB00D62903 /* Frameworks */,
 				43430C251DBEB2EB00D62903 /* Resources */,
+				43FA5DD81DBEB58600AE9BB3 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				43A49E3F1DD3D48200F9FC1D /* PBXTargetDependency */,
 			);
 			name = CMUPrint;
 			productName = CMUPrint;
 			productReference = 43430C271DBEB2EB00D62903 /* CMUPrint.app */;
 			productType = "com.apple.product-type.application";
+		};
+		43A49E351DD3D48200F9FC1D /* CMU Print */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43A49E411DD3D48200F9FC1D /* Build configuration list for PBXNativeTarget "CMU Print" */;
+			buildPhases = (
+				43A49E321DD3D48200F9FC1D /* Sources */,
+				43A49E331DD3D48200F9FC1D /* Frameworks */,
+				43A49E341DD3D48200F9FC1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CMU Print";
+			productName = "CMU Print";
+			productReference = 43A49E361DD3D48200F9FC1D /* CMU Print.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		43FA5DC91DBEB58600AE9BB3 /* PrintShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43FA5DD71DBEB58600AE9BB3 /* Build configuration list for PBXNativeTarget "PrintShare" */;
+			buildPhases = (
+				43FA5DC61DBEB58600AE9BB3 /* Sources */,
+				43FA5DC71DBEB58600AE9BB3 /* Frameworks */,
+				43FA5DC81DBEB58600AE9BB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrintShare;
+			productName = PrintShare;
+			productReference = 43FA5DCA1DBEB58600AE9BB3 /* PrintShare.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -90,14 +200,37 @@
 		43430C1F1DBEB2EB00D62903 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Josh Zhanson";
 				TargetAttributes = {
 					43430C261DBEB2EB00D62903 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = K72FJPB7L5;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					43A49E351DD3D48200F9FC1D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = K72FJPB7L5;
+						ProvisioningStyle = Automatic;
+					};
+					43FA5DC91DBEB58600AE9BB3 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = K72FJPB7L5;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -115,6 +248,8 @@
 			projectRoot = "";
 			targets = (
 				43430C261DBEB2EB00D62903 /* CMUPrint */,
+				43FA5DC91DBEB58600AE9BB3 /* PrintShare */,
+				43A49E351DD3D48200F9FC1D /* CMU Print */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +265,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		43A49E341DD3D48200F9FC1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A49E3C1DD3D48200F9FC1D /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43FA5DC81DBEB58600AE9BB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,11 +288,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				43430C2D1DBEB2EB00D62903 /* ViewController.swift in Sources */,
+				43BDFFB51DCAD763008E0056 /* TutorialViewController.swift in Sources */,
 				43430C2B1DBEB2EB00D62903 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		43A49E321DD3D48200F9FC1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A49E391DD3D48200F9FC1D /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43FA5DC61DBEB58600AE9BB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43A49E3F1DD3D48200F9FC1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43A49E351DD3D48200F9FC1D /* CMU Print */;
+			targetProxy = 43A49E3E1DD3D48200F9FC1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		43430C2E1DBEB2EB00D62903 /* Main.storyboard */ = {
@@ -159,6 +333,14 @@
 				43430C341DBEB2EB00D62903 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		43A49E3A1DD3D48200F9FC1D /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43A49E3B1DD3D48200F9FC1D /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -182,6 +364,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -231,6 +414,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -258,11 +442,15 @@
 		43430C3A1DBEB2EB00D62903 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CMUPrint/CMUPrint.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = K72FJPB7L5;
 				INFOPLIST_FILE = CMUPrint/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Josh-Zhanson.CMUPrint";
+				PRODUCT_BUNDLE_IDENTIFIER = "Josh-Zhanson.CMUprint";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -271,12 +459,76 @@
 		43430C3B1DBEB2EB00D62903 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CMUPrint/CMUPrint.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = K72FJPB7L5;
 				INFOPLIST_FILE = CMUPrint/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Josh-Zhanson.CMUPrint";
+				PRODUCT_BUNDLE_IDENTIFIER = "Josh-Zhanson.CMUprint";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		43A49E421DD3D48200F9FC1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = K72FJPB7L5;
+				INFOPLIST_FILE = "CMU Print/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Josh-Zhanson.CMUprint.CMU-Print";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		43A49E431DD3D48200F9FC1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = K72FJPB7L5;
+				INFOPLIST_FILE = "CMU Print/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Josh-Zhanson.CMUprint.CMU-Print";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		43FA5DD51DBEB58600AE9BB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PrintShare/PrintShare.entitlements;
+				DEVELOPMENT_TEAM = K72FJPB7L5;
+				INFOPLIST_FILE = PrintShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Josh-Zhanson.CMUPrint.PrintShare";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		43FA5DD61DBEB58600AE9BB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PrintShare/PrintShare.entitlements;
+				DEVELOPMENT_TEAM = K72FJPB7L5;
+				INFOPLIST_FILE = PrintShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Josh-Zhanson.CMUPrint.PrintShare";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -300,6 +552,24 @@
 				43430C3B1DBEB2EB00D62903 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43A49E411DD3D48200F9FC1D /* Build configuration list for PBXNativeTarget "CMU Print" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43A49E421DD3D48200F9FC1D /* Debug */,
+				43A49E431DD3D48200F9FC1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		43FA5DD71DBEB58600AE9BB3 /* Build configuration list for PBXNativeTarget "PrintShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43FA5DD51DBEB58600AE9BB3 /* Debug */,
+				43FA5DD61DBEB58600AE9BB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
